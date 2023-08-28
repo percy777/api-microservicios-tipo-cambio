@@ -4,7 +4,7 @@ Este proyecto se implmento una api REST en springboot, que luego se dockeriza pa
 
 
 el api REST se implmento usando una arquitectura basica MVC para organizar los paquetes 
-se uso dependencias de springJPA y para conectar a una BD in memory H2 
+tambien se uso dependencias de springJPA y para conectar a una BD in memory H2 
 
 
 
