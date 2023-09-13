@@ -23,7 +23,7 @@ import lombok.Setter;
 public class Moneda implements Serializable{
 	
 	/**
-	 * cambio prueba
+	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	@Id
