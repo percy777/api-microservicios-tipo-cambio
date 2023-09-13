@@ -12,12 +12,20 @@ import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
+import lombok.Getter;
+import lombok.Setter;
 
 
 @Entity
 @Table(name="monedas")
+@Getter
+@Setter
 public class Moneda implements Serializable{
 	
+	/**
+	 * cambio prueba
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -39,59 +47,59 @@ public class Moneda implements Serializable{
 		createAt = new Date();
 	}
 	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	
-	public double getMonto() {
-		return monto;
-	}
-
-	public void setMonto(double monto) {
-		this.monto = monto;
-	}
-
-	public String getMonedaOrigen() {
-		return monedaOrigen;
-	}
-
-	public void setMonedaOrigen(String monedaOrigen) {
-		this.monedaOrigen = monedaOrigen;
-	}
-
-	public String getMonedaDestino() {
-		return monedaDestino;
-	}
-
-	public void setMonedaDestino(String monedaDestino) {
-		this.monedaDestino = monedaDestino;
-	}
-
-	public double getTipoCambio() {
-		return tipoCambio;
-	}
-
-	public void setTipoCambio(double tipoCambio) {
-		this.tipoCambio = tipoCambio;
-	}
-
-	public double getMonedaCambio() {
-		return monedaCambio;
-	}
-
-	public void setMonedaCambio(double monedaCambio) {
-		this.monedaCambio = monedaCambio;
-	}
-
-	public Date getCreateAt() {
-		return createAt;
-	}
-	public void setCreateAt(Date createAt) {
-		this.createAt = createAt;
-	}
+//	public Long getId() {
+//		return id;
+//	}
+//	public void setId(Long id) {
+//		this.id = id;
+//	}
+//	
+//	public double getMonto() {
+//		return monto;
+//	}
+//
+//	public void setMonto(double monto) {
+//		this.monto = monto;
+//	}
+//
+//	public String getMonedaOrigen() {
+//		return monedaOrigen;
+//	}
+//
+//	public void setMonedaOrigen(String monedaOrigen) {
+//		this.monedaOrigen = monedaOrigen;
+//	}
+//
+//	public String getMonedaDestino() {
+//		return monedaDestino;
+//	}
+//
+//	public void setMonedaDestino(String monedaDestino) {
+//		this.monedaDestino = monedaDestino;
+//	}
+//
+//	public double getTipoCambio() {
+//		return tipoCambio;
+//	}
+//
+//	public void setTipoCambio(double tipoCambio) {
+//		this.tipoCambio = tipoCambio;
+//	}
+//
+//	public double getMonedaCambio() {
+//		return monedaCambio;
+//	}
+//
+//	public void setMonedaCambio(double monedaCambio) {
+//		this.monedaCambio = monedaCambio;
+//	}
+//
+//	public Date getCreateAt() {
+//		return createAt;
+//	}
+//	public void setCreateAt(Date createAt) {
+//		this.createAt = createAt;
+//	}
 	
 
 }
