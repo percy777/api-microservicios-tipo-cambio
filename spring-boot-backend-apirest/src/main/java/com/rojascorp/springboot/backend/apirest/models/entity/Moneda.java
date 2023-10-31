@@ -12,11 +12,13 @@ import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
 
 @Entity
+@Builder
 @Table(name="monedas")
 @Getter
 @Setter

@@ -36,7 +36,7 @@ public class ClienteserviceImpl implements IClienteService, ITipoCambio {
 	@Transactional
 	public Moneda guardar(Moneda moneda) {
 		// TODO Auto-generated method stub
-		Moneda monedas = new Moneda();
+		Moneda monedas = null;
 		monedas = this.realizarCambioDivisa(moneda);
 		monedas = iClienteDao.save(moneda);
 		return monedas;
